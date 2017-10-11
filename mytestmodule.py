@@ -4,7 +4,7 @@ def test_proc(x):
     """Fake procedure to test doctests.
 
     >>> test_proc(42)
-    43
+    42
 
     """
     return x
