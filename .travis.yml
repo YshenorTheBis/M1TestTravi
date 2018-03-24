@@ -3,8 +3,8 @@ language: python
 sudo : false
 python:
   - "3.6.4"
-env:
-  DISTRIB="conda"
+packages:
+  - python-scipy
 global:
   -act = logistic
   
