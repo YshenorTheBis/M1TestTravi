@@ -22,7 +22,7 @@ branches:
     - master
     
 install:
-  - pip install --user --install-option="--prefix=" -U scikit-learn
+  - pip install numpy scipy scikit-learn
 
 script: python3 TP5.py $hid $act
 
