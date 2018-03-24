@@ -2,23 +2,26 @@ language: python
 
 sudo : false
 python:
-  - "2.6"
-
+  - "3.6.4"
+  
+global:
+  -act = logistic
+  
+matrix:
+  - hid = 5
+  - hid = 10
+  - hid = 15
+  - hid = 20
+  - hid = 25
+  - hid = 30
+  
+  
 branches:
   only:
     - master
     
-env:
-  - DJANGO_VERSION=1.7.8
-  - DJANGO_VERSION=1.8.2
-  
 install:
   - pip install -q Django==$DJANGO_VERSION
-script: python mytestmodule.py
 
-notifications:
-  email:
-    recipients:
-      - matis.ghiotto@gmail.com   
-    on_success: change
-    on_failure: always
+script: python3 TP5.py $hid $act
+
