@@ -105,6 +105,7 @@ mns = fetch_mldata("MNIST original")
 noise = 0.0
 X= mns.data
 Y= mns.target
+print(str(sys.argv))
 activate = str(sys.argv[2])#input()#logistic
 hidden = sys.argv[1]#input(#(25)
 
