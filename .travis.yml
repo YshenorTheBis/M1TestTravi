@@ -6,9 +6,7 @@ python:
 packages:
   - python-scipy
 global:
-  -act = logistic
-  
-matrix:
+  - act = logistic
   - hid = 5
   - hid = 10
   - hid = 15
