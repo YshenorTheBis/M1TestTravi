@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.neural_network import MLPClassifier
 from sklearn.neural_network import MLPRegressor
 from sklearn.cross_validation import train_test_split
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from sklearn.neural_network import MLPRegressor
 from sklearn.preprocessing import StandardScaler
 from sklearn.datasets.mldata import fetch_mldata 
