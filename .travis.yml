@@ -22,7 +22,7 @@ branches:
     - master
     
 install:
-  - pip install -q Django==2.0.3
+  - pip install --user --install-option="--prefix=" -U scikit-learn
 
 script: python3 TP5.py $hid $act
 
